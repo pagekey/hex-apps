@@ -1,0 +1,5 @@
+name: bob
+contract_name: assistant
+provider_name: echo-assistant
+state:
+  model_name: HexGPT

@@ -1,0 +1,8 @@
+name: local-files
+implements:
+  contract: filestore
+state_requirements:
+  base_path: str
+executor: bash
+methods:
+  save: "echo '$content' > $base_path/$filename"

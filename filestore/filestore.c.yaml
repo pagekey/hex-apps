@@ -1,0 +1,6 @@
+name: filestore
+version: 1.0.0
+state_schema:
+  ref: str
+methods:
+  save: { inputs: { filename: str, content: str } }

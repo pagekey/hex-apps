@@ -1,0 +1,15 @@
+name: managed-service
+author: PageKey
+version: 0.0.0
+state_schema:
+  ref: str
+methods:
+  up:
+    inputs: {}
+    outputs: {}
+  down:
+    inputs: {}
+    outputs: {}
+  status:
+    inputs: {}
+    outputs: {}
