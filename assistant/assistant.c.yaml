@@ -1,5 +1,4 @@
 name: assistant
-version: 1.0.0
 state_schema:
   memory_vault: contract.filestore
   model_name: str
