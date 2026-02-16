@@ -10,13 +10,13 @@ executor: python
 methods:
   chat:
     type: python
-    ref: echo/chat.py
+    ref: ollama/chat.py
   up:
     type: python
-    ref: echo/up.py
+    ref: ollama/up.py
   down:
     type: python
-    ref: echo/down.py
+    ref: ollama/down.py
   status:
     type: python
-    ref: echo/status.py
+    ref: ollama/status.py
