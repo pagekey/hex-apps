@@ -1,0 +1,8 @@
+name: home-site
+contract_name: website
+provider_name: caddy-website
+state:
+  image: docker.io/library/caddy
+  container_name: caddy
+  port_map: 80:80
+  path: /home/pagekey

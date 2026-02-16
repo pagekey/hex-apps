@@ -1,0 +1,13 @@
+name: website
+state_schema:
+  path: str
+methods:
+  start:
+    inputs: {}
+    outputs: {}
+  stop:
+    inputs: {}
+    outputs: {}
+  status:
+    inputs: {}
+    outputs: {}
