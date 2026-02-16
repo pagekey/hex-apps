@@ -1,4 +1,4 @@
-name: echo-eli
+name: eli
 contract_name: assistant
 provider_name: echo-assistant
 state:

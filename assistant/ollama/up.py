@@ -7,4 +7,4 @@ image = hex.get_state("image")
 
 cmd = f"podman run -d --name {container_name} -p {port_map} {image}"
 
-subprocess.check_call(cmd)
+subprocess.check_call(cmd.split())
