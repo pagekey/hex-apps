@@ -1,9 +1,13 @@
-name: echo-assistant
+name: ollama-assistant
 implements_contract: assistant
 state_requirements:
   model_name: str
+  base_url: str
+  container_name: str
+  port_map: str
+  image: str
 executor: python
 methods:
   chat:
     type: python
-    ref: echo-assistant-chat.py
+    ref: echo/chat.py

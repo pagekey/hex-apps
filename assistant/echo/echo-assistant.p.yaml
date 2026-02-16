@@ -1,0 +1,18 @@
+name: echo-assistant
+implements_contract: assistant
+state_requirements:
+  model_name: str
+executor: python
+methods:
+  chat:
+    type: python
+    ref: echo/chat.py
+  up:
+    type: python
+    ref: echo/up.py
+  down:
+    type: python
+    ref: echo/down.py
+  status:
+    type: python
+    ref: echo/status.py
