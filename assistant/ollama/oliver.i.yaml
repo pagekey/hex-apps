@@ -5,4 +5,5 @@ state:
   image: docker.io/alpine/ollama
   container_name: ollama
   port_map: 11434:11434
+  base_url: http://localhost:11434
   model_name: phi3
