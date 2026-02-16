@@ -7,12 +7,12 @@ methods:
   chat:
     type: python
     ref: echo/chat.py
-  up:
+  start:
     type: python
-    ref: echo/up.py
-  down:
+    ref: echo/start.py
+  stop:
     type: python
-    ref: echo/down.py
+    ref: echo/stop.py
   status:
     type: python
     ref: echo/status.py

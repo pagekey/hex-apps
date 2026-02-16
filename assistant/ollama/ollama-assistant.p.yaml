@@ -11,12 +11,12 @@ methods:
   chat:
     type: python
     ref: ollama/chat.py
-  up:
+  start:
     type: python
-    ref: ollama/up.py
-  down:
+    ref: ollama/start.py
+  stop:
     type: python
-    ref: ollama/down.py
+    ref: ollama/stop.py
   status:
     type: python
     ref: ollama/status.py

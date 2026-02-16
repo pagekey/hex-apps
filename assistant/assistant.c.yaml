@@ -8,10 +8,10 @@ methods:
       prompt: str
     outputs:
       message: str
-  up:
+  start:
     inputs: {}
     outputs: {}
-  down:
+  stop:
     inputs: {}
     outputs: {}
   status:
