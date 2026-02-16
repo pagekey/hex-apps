@@ -2,7 +2,7 @@ name: oliver
 contract_name: assistant
 provider_name: ollama-assistant
 state:
-  image: alpine/ollama
+  image: docker.io/alpine/ollama
   container_name: ollama
   port_map: 11434:11434
   model_name: phi3
