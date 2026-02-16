@@ -1,4 +1,4 @@
-name: docker-container
+name: podman-container
 implements:
   contract: managed-service
 state_requirements:
@@ -8,9 +8,9 @@ state_requirements:
 executor: bash
 methods:
   up: |
-    docker run -d --name $HEX_STATE_CONTAINER_NAME -p $HEX_STATE_PORT_MAP $HEX_STATE_IMAGE
+    podman run -d --name $HEX_STATE_CONTAINER_NAME -p $HEX_STATE_PORT_MAP $HEX_STATE_IMAGE
   down: |
-    docker stop $HEX_STATE_CONTAINER_NAME
-    docker rm $HEX_STATE_CONTAINER_NAME
+    podman stop $HEX_STATE_CONTAINER_NAME
+    podman rm $HEX_STATE_CONTAINER_NAME
   status: |
-    docker ps --filter name=$HEX_STATE_CONTAINER_NAME
+    podman ps --filter name=$HEX_STATE_CONTAINER_NAME

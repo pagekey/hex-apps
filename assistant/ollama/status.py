@@ -3,7 +3,7 @@ import subprocess
 
 container_name = hex.get_state("container_name")
 
-result = subprocess.run(f"docker ps --filter name={container_name} -q")
+result = subprocess.run(f"podman ps --filter name={container_name} -q")
 
 if result.returncode == 0:
     if len(result.stdout.strip()) > 0:
@@ -11,4 +11,4 @@ if result.returncode == 0:
     else:
         print("Not running.")
 else:
-    print("Failed to run Docker command.")
+    print("Failed to run container command.")
