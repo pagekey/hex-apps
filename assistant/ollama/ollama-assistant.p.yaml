@@ -11,3 +11,12 @@ methods:
   chat:
     type: python
     ref: echo/chat.py
+  up:
+    type: python
+    ref: echo/up.py
+  down:
+    type: python
+    ref: echo/down.py
+  status:
+    type: python
+    ref: echo/status.py
