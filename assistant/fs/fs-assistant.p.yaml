@@ -1,0 +1,18 @@
+name: fs-assistant
+implements_contract: assistant
+state_requirements:
+  filestore: contract.filesystem
+executor: python
+methods:
+  chat:
+    type: python
+    ref: fs/chat.py
+  start:
+    type: python
+    ref: fs/start.py
+  stop:
+    type: python
+    ref: fs/stop.py
+  status:
+    type: python
+    ref: fs/status.py

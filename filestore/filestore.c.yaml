@@ -2,4 +2,13 @@ name: filestore
 state_schema:
   ref: str
 methods:
-  save: { inputs: { filename: str, content: str } }
+  list:
+    inputs:
+      path: str
+    outputs:
+      names: list
+  save:
+    inputs:
+      filename: str
+      content: str
+    outputs: {}
