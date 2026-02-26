@@ -10,5 +10,5 @@ cmd = "list"
 result = hex.run(filestore_name, cmd, inputs={"path": "."})
 
 # Get the list of files and print it.
-files = result.get("files", [])
-print(f"AI ({model_name}): I see these files: {', '.join(files)}")
+files = result.get("names", [])
+print(f"AI: I see these files: {', '.join(files)}")
