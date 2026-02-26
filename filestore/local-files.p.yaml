@@ -1,8 +1,12 @@
 name: local-files
-implements:
-  contract: filestore
+implements_contract: filestore
 state_requirements:
   base_path: str
 executor: bash
 methods:
-  save: "echo '$content' > $base_path/$filename"
+  list:
+    type: python
+    ref: code/list.py
+  save:
+    type: python
+    ref: code/save.py
