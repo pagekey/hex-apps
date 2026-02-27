@@ -1,0 +1,15 @@
+name: cron-scheduler
+implements_contract: scheduler
+state_requirements:
+  user: str
+executor: python
+methods:
+  schedule:
+    type: python
+    ref: code/schedule.py
+  unschedule:
+    type: python
+    ref: code/unschedule.py
+  list_jobs:
+    type: python
+    ref: code/list_jobs.py

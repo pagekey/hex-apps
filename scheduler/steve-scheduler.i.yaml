@@ -1,0 +1,5 @@
+name: steve-scheduler
+contract_name: scheduler
+provider_name: cron-scheduler
+state:
+  user: steve

@@ -1,0 +1,22 @@
+name: scheduler
+state_schema:
+  user: str
+methods:
+  schedule:
+    inputs:
+      job_name: str      # Unique ID for the task
+      item: str          # Item to run something on
+      method: str        # Method of item to run
+      inputs: dict       # Inputs to the item
+      minute: str
+      hour: str
+      day: str
+      month: str
+      weekday: str
+  unschedule:
+    inputs:
+      job_name: str
+  list_jobs:
+    inputs: {}
+    outputs:
+      jobs: list         # List of structured job objects
