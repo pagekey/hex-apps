@@ -1,4 +1,4 @@
-name: local-files
+name: google-drive
 implements_contract: filestore
 state_requirements:
   base_path: str
@@ -6,7 +6,7 @@ executor: bash
 methods:
   list:
     type: python
-    ref: code/list.py
+    ref: google-drive/list.py
   save:
     type: python
-    ref: code/save.py
+    ref: google-drive/save.py
