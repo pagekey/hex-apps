@@ -1,7 +1,4 @@
 name: assistant
-state_schema:
-  memory_vault: contract.filestore
-  model_name: str
 methods:
   chat:
     inputs:

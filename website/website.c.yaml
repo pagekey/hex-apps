@@ -1,6 +1,4 @@
 name: website
-state_schema:
-  path: str
 methods:
   start:
     inputs: {}

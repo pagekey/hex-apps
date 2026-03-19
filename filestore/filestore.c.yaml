@@ -1,6 +1,4 @@
 name: filestore
-state_schema:
-  ref: str
 methods:
   list:
     inputs:
