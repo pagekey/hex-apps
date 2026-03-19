@@ -1,6 +1,6 @@
 name: fs-assistant
 implements_contract: assistant
-state_requirements:
+state:
   filestore: contract.filesystem
 executor: python
 methods:

@@ -1,6 +1,6 @@
 name: ollama-assistant
 implements_contract: assistant
-state_requirements:
+state:
   model_name: str
   base_url: str
   container_name: str

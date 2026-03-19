@@ -1,6 +1,6 @@
 name: caddy-website
 implements_contract: website
-state_requirements:
+state:
   container_name: str
   image: str
   port_map: str

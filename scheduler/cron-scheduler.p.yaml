@@ -1,6 +1,6 @@
 name: cron-scheduler
 implements_contract: scheduler
-state_requirements:
+state:
   user: str
 executor: python
 methods:

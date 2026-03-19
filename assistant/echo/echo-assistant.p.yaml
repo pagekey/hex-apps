@@ -1,6 +1,6 @@
 name: echo-assistant
 implements_contract: assistant
-state_requirements:
+state:
   model_name: str
 executor: python
 methods:

@@ -1,6 +1,6 @@
 name: google-drive
 implements_contract: filestore
-state_requirements:
+state:
   base_path: str
 executor: bash
 methods:
