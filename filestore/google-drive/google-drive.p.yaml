@@ -6,7 +6,7 @@ executor: bash
 methods:
   list:
     type: python
-    ref: google-drive/list.py
+    ref: list.py
   save:
     type: python
-    ref: google-drive/save.py
+    ref: save.py

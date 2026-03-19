@@ -9,10 +9,10 @@ executor: python
 methods:
   start:
     type: python
-    ref: caddy/start.py
+    ref: start.py
   stop:
     type: python
-    ref: caddy/stop.py
+    ref: stop.py
   status:
     type: python
-    ref: caddy/status.py
+    ref: status.py

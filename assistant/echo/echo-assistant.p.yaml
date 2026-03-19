@@ -6,13 +6,13 @@ executor: python
 methods:
   chat:
     type: python
-    ref: echo/chat.py
+    ref: chat.py
   start:
     type: python
-    ref: echo/start.py
+    ref: start.py
   stop:
     type: python
-    ref: echo/stop.py
+    ref: stop.py
   status:
     type: python
-    ref: echo/status.py
+    ref: status.py
