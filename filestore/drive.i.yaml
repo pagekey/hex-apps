@@ -1,5 +1,4 @@
 name: steve-google-drive
-contract_name: filestore
 provider_name: google-drive
 state:
   base_path: "/home/steve/"

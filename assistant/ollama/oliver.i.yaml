@@ -1,5 +1,4 @@
 name: oliver
-contract_name: assistant
 provider_name: ollama-assistant
 state:
   image: docker.io/alpine/ollama

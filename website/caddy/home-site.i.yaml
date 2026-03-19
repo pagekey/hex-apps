@@ -1,5 +1,4 @@
 name: home-site
-contract_name: website
 provider_name: caddy-website
 state:
   image: docker.io/library/caddy

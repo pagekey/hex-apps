@@ -1,5 +1,4 @@
 name: fred
-contract_name: assistant
 provider_name: fs-assistant
 state:
   filestore: home
