@@ -1,5 +1,5 @@
 name: ollama-assistant
-implements_contract: assistant
+implements: assistant
 state:
   model_name: str
   base_url: str

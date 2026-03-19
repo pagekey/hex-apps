@@ -1,5 +1,5 @@
 name: cron-scheduler
-implements_contract: scheduler
+implements: scheduler
 state:
   user: str
 executor: python

@@ -1,5 +1,5 @@
 name: caddy-website
-implements_contract: website
+implements: website
 state:
   container_name: str
   image: str

@@ -1,5 +1,5 @@
 name: google-drive
-implements_contract: filestore
+implements: filestore
 state:
   base_path: str
 executor: bash
