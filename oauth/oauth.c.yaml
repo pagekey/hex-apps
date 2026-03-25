@@ -1,0 +1,23 @@
+name: OAuth
+emoji: 🔑
+methods:
+  start:
+    inputs: {}
+    outputs:
+      url: str
+      state: str
+  finish:
+    inputs:
+      code: str
+      state: str
+    outputs:
+      access_token: str
+      refresh_token: str
+      expires_in: int
+      token_type: str
+  list:
+    inputs:
+      access_token: str
+      query: str
+    outputs:
+      files: str

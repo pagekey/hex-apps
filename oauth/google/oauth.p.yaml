@@ -1,0 +1,17 @@
+name: GoogleOAuthProvider
+implements: OAuth
+executor: python
+requirements_file: requirements.txt
+emoji: 🛠️
+state:
+  client_id:
+    type: str
+  client_secret:
+    type: str
+methods:
+  start:
+    ref: start.py
+  finish:
+    ref: finish.py
+  list:
+    ref: list.py
