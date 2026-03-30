@@ -1,0 +1,7 @@
+name: cli-user-input
+implements: user-input
+executor: python
+methods:
+  get_string:
+    type: python
+    ref: get_string.py

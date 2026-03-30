@@ -1,0 +1,7 @@
+name: user-input
+methods:
+  get_string:
+    inputs:
+      prompt: str
+    outputs:
+      value: str
