@@ -8,6 +8,12 @@ state:
     type: str
   client_secret:
     type: str
+  state:
+    type: str
+  auth_token:
+    type: str
+  refresh_token:
+    type: str
 methods:
   generate_url:
     ref: generate_url.py

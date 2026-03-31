@@ -3,14 +3,14 @@ import requests
 
 # Gather inputs
 code = hex.get_input("code")
-state = hex.get_input("oauth_state")
 redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
 
-# Load client credentials from state
 client_id = hex.get_state("client_id")
-client_secret = hex.get_state("client_secret")  # optional if you have one
+client_secret = hex.get_state("client_secret")
 
-# Exchange the authorization code for tokens
+# PKCE: retrieve stored verifier
+code_verifier = hex.get_state("code_verifier")
+
 resp = requests.post(
     "https://oauth2.googleapis.com/token",
     data={
@@ -19,6 +19,8 @@ resp = requests.post(
         "code": code,
         "redirect_uri": redirect_uri,
         "grant_type": "authorization_code",
+        # PKCE
+        "code_verifier": code_verifier,
     },
 )
 
@@ -27,11 +29,9 @@ if resp.status_code != 200:
 
 data = resp.json()
 
-# Output tokens
 hex.set_output("access_token", data.get("access_token"))
+hex.set_state("access_token", data.get("access_token"))
 hex.set_output("refresh_token", data.get("refresh_token"))
+hex.set_state("refresh_token", data.get("refresh_token"))
 hex.set_output("expires_in", data.get("expires_in"))
 hex.set_output("token_type", data.get("token_type"))
-
-# Persist refresh token for later use
-hex.set_output("refresh_token", data.get("refresh_token"))
