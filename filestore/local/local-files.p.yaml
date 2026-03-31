@@ -7,6 +7,9 @@ methods:
   list:
     type: python
     ref: list.py
-  save:
+  read:
     type: python
-    ref: save.py
+    ref: read.py
+  write:
+    type: python
+    ref: write.py

@@ -5,7 +5,12 @@ methods:
       path: str
     outputs:
       names: list
-  save:
+  read:
+    inputs:
+      filename: str
+    outputs:
+      content: str
+  write:
     inputs:
       filename: str
       content: str

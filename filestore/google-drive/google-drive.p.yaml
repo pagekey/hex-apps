@@ -2,11 +2,15 @@ name: google-drive
 implements: filestore
 state:
   base_path: str
+  access_token: str
 executor: bash
 methods:
   list:
     type: python
     ref: list.py
-  save:
+  read:
     type: python
-    ref: save.py
+    ref: read.py
+  write:
+    type: python
+    ref: write.py
