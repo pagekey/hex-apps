@@ -10,6 +10,7 @@ hex.set_state("source", source)
 destination = hex.run(
     "cli-user-input", "get_string", {"prompt": "Enter backup destination"}
 )["value"]
+hex.set_state("destination", source)
 
 # Save state (so test/schedule can use it)
 hex.set_output("source", source)

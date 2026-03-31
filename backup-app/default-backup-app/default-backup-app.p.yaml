@@ -2,6 +2,7 @@ name: default-backup-app
 implements: backup-app
 state:
   source: str
+  destination: str
 executor: python
 methods:
   setup:
