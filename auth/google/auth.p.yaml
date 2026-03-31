@@ -9,9 +9,9 @@ state:
   client_secret:
     type: str
 methods:
-  start:
-    ref: start.py
-  finish:
-    ref: finish.py
+  generate_url:
+    ref: generate_url.py
+  generate_token:
+    ref: generate_token.py
   test:
     ref: test.py

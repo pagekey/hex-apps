@@ -1,12 +1,12 @@
 name: auth
 emoji: 🔑
 methods:
-  start:
+  generate-url:
     inputs: {}
     outputs:
       url: str
       state: str
-  finish:
+  generate-token:
     inputs:
       code: str
       state: str
