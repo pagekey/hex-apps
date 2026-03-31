@@ -1,4 +1,0 @@
-name: steve-scheduler
-provider_name: cron-scheduler
-state:
-  user: steve
