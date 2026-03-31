@@ -1,7 +1,5 @@
 import hex
 
-source = hex.get_input("source")
-
-files = hex.run("filestore", "list", {"path": source})["names"]
+files = hex.run("backup-destination", "list", {"path": "."})
 
 hex.set_output("filenames", files)

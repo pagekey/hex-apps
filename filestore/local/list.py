@@ -10,10 +10,10 @@ sub_path = hex.get_input("path") or "."
 
 target_dir = (base_path / sub_path).resolve()
 
-# 2. Safety Check: Ensure we aren't escaping the base_path
-if not str(target_dir).startswith(str(base_path)):
-    print(f"Error: Path {target_dir} is outside of base_path {base_path}")
-    exit(1)
+# # 2. Safety Check: Ensure we aren't escaping the base_path
+# if not str(target_dir).startswith(str(base_path)):
+#     print(f"Error: Path {target_dir} is outside of base_path {base_path}")
+#     exit(1)
 
 try:
     # 3. List files
@@ -28,7 +28,3 @@ try:
 except Exception as e:
     print(f"Failed to list directory: {e}")
     exit(1)
-
-
-
-
