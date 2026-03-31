@@ -1,0 +1,15 @@
+name: backup-app
+methods:
+  setup:
+    inputs: {}
+    outputs: {}
+  test:
+    inputs: {}
+    outputs: {}
+  schedule:
+    inputs: {}
+    outputs: {}
+  list:
+    inputs: {}
+    outputs:
+      filenames: str
