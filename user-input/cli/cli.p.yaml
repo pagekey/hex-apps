@@ -1,6 +1,7 @@
 name: cli-user-input
 implements: user-input
 executor: python
+emoji: ⌨️
 methods:
   get_string:
     type: python
