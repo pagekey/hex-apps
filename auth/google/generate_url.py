@@ -7,7 +7,8 @@ import base64
 # Gather inputs
 client_id = hex.get_state("client_id")
 redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
-scope = "https://www.googleapis.com/auth/drive.readonly"
+scope = "https://www.googleapis.com/auth/drive"
+# scope = "https://www.googleapis.com/auth/drive.readonly"  # uncomment to use readonly scope
 
 # Generate state (same as before)
 state = secrets.token_urlsafe(32)
@@ -47,4 +48,3 @@ hex.set_output("state", state)
 hex.set_state("state", state)
 
 print(f"Generated URL! Now, visit: {url}")
-

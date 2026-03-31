@@ -3,7 +3,8 @@ implements: filestore
 state:
   base_path: str
   access_token: str
-executor: bash
+executor: python
+requirements_file: requirements.txt
 methods:
   list:
     type: python

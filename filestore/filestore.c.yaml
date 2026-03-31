@@ -1,8 +1,7 @@
 name: filestore
 methods:
   list:
-    inputs:
-      path: str
+    inputs: {}
     outputs:
       names: list
   read:

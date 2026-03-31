@@ -2,7 +2,7 @@ name: local-files
 implements: filestore
 state:
   base_path: str
-executor: bash
+executor: python
 methods:
   list:
     type: python
