@@ -1,4 +1,0 @@
-name: fred
-provider_name: fs-assistant
-state:
-  filestore: home

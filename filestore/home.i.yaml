@@ -1,4 +1,0 @@
-name: home
-provider_name: local-files
-state:
-  base_path: "/home/steve/"

@@ -1,4 +1,0 @@
-name: steve-google-drive
-provider_name: google-drive
-state:
-  base_path: "/home/steve/"
