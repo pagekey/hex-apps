@@ -10,7 +10,7 @@ state:
     type: str
   state:
     type: str
-  auth_token:
+  access_token:
     type: str
   refresh_token:
     type: str

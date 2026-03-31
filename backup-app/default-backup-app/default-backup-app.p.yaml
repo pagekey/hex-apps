@@ -1,6 +1,12 @@
 name: default-backup-app
 implements: backup-app
 state:
+  item_auth: contract.auth
+  item_user_input: contract.user-input
+  item_source: contract.filesystem
+  item_destination: contract.filesystem
+  access_token: str
+  refresh_token: str
   source: str
   destination: str
 executor: python
