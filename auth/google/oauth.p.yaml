@@ -1,5 +1,5 @@
-name: GoogleOAuthProvider
-implements: OAuth
+name: google-auth
+implements: auth
 executor: python
 requirements_file: requirements.txt
 emoji: 🛠️
@@ -13,5 +13,5 @@ methods:
     ref: start.py
   finish:
     ref: finish.py
-  list:
-    ref: list.py
+  test:
+    ref: test.py

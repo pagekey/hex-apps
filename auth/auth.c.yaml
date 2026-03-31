@@ -1,4 +1,4 @@
-name: OAuth
+name: auth
 emoji: 🔑
 methods:
   start:
@@ -15,7 +15,7 @@ methods:
       refresh_token: str
       expires_in: int
       token_type: str
-  list:
+  test:
     inputs:
       access_token: str
       query: str
