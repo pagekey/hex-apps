@@ -1,0 +1,7 @@
+name: backup-app
+provider_name: default-backup-app
+state:
+  item_user_input: cli-user-input
+  item_source: backup-source
+  item_destination: backup-destination
+emoji: null

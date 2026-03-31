@@ -6,6 +6,9 @@ state:
 executor: python
 requirements_file: requirements.txt
 methods:
+  setup:
+    type: python
+    ref: setup.py
   list:
     type: python
     ref: list.py

@@ -6,6 +6,9 @@ methods:
   test:
     inputs: {}
     outputs: {}
+  run_now:
+    inputs: {}
+    outputs: {}
   schedule:
     inputs: {}
     outputs: {}

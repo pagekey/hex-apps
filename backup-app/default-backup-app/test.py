@@ -1,14 +1,12 @@
 import hex
 
-item_auth = hex.get_state("item_auth") or "google-auth"
-access_token = hex.get_state("access_token")
+item_source = hex.get_state("item_source")
 
-print(f"Testing auth on {item_auth}...")
-# Run test on the auth item
-res = hex.run(item_auth, "test", {"access_token": access_token, "path": ".", "query": ""})
+print(f"Testing auth on {item_source}...")
+# Run list on the source item
+res = hex.run(item_source, "list")
 
-if res.get("files"):
+if res.get("names"):
     print(f"✅ Auth test successful! Files: {res.get('files')}")
 else:
     print(f"❌ Auth test failed or no files returned.")
-

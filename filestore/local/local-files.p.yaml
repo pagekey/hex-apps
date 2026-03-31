@@ -4,6 +4,12 @@ state:
   base_path: str
 executor: python
 methods:
+  setup:
+    type: python
+    ref: setup.py
+  get_base_path:
+    type: python
+    ref: get_base_path.py
   list:
     type: python
     ref: list.py

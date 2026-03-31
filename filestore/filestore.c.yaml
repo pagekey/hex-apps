@@ -1,5 +1,12 @@
 name: filestore
 methods:
+  setup:
+    inputs: {}
+    outputs: {}
+  get_base_path:
+    inputs: {}
+    outputs:
+      base_path: str
   list:
     inputs: {}
     outputs:
