@@ -1,3 +1,5 @@
+import os
+
 import hex
 
 # Resolve helper items
@@ -9,13 +11,8 @@ if not hex.get_item(item_user_input):
     hex.create_item(item_user_input, "cli-user-input", emoji="⌨️")
 
 if not hex.get_item(item_auth):
-    client_id = hex.run(
-        item_user_input, "get_string", {"prompt": "Enter Google Client ID: "}
-    )["value"]
-
-    client_secret = hex.run(
-        item_user_input, "get_string", {"prompt": "Enter Google Client Secret: "}
-    )["value"]
+    client_id = os.getenv("GOOGLE_OAUTH_CLIENT_ID")
+    client_secret = os.getenv("GOOGLE_OAUTH_CLIENT_SECRET")
 
     hex.create_item(
         item_auth,
