@@ -25,8 +25,6 @@ if not hex.get_item(item_auth):
 auth_res = hex.run(item_auth, "generate_url")
 auth_url = auth_res.get("url")
 
-print(f"Authorize here:\n{auth_url}")
-
 code = hex.run(
     item_user_input, "get_string", {"prompt": "Paste the authorization code: "}
 )["value"]
@@ -41,11 +39,13 @@ hex.set_state("access_token", access_token)
 hex.set_state("refresh_token", refresh_token)
 
 # Ask for base path
-base_path = hex.run(
-    item_user_input,
-    "get_string",
-    {"prompt": "Enter Google Drive folder (name or ID): "},
-)["value"]
+base_path = hex.get_input("base_path")
+if not base_path:
+    base_path = hex.run(
+        item_user_input,
+        "get_string",
+        {"prompt": "Enter Google Drive folder (name or ID): "},
+    )["value"]
 
 hex.set_state("base_path", base_path)
 

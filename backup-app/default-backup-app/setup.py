@@ -19,7 +19,7 @@ if not hex.get_item(item_source):
         item_user_input, "get_string", {"prompt": "Enter Google Drive source folder: "}
     )["value"]
     hex.create_item(item_source, "google-drive", {"base_path": source_path}, emoji="📂")
-    hex.run(item_source, "setup")
+    hex.run(item_source, "setup", inputs={"base_path": source_path})
 
 if not hex.get_item(item_destination):
     dest_path = hex.run(
@@ -29,5 +29,5 @@ if not hex.get_item(item_destination):
         item_destination, "local-files", {"base_path": dest_path}, emoji="📂"
     )
 
-print(f"✅ Backup setup complete! Access token saved.")
+print("✅ Backup setup complete! Access token saved.")
 print("Next, run 'test' to verify it works.")

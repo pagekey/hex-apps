@@ -1,7 +1,8 @@
 name: filestore
 methods:
   setup:
-    inputs: {}
+    inputs:
+      base_path: str
     outputs: {}
   get_base_path:
     inputs: {}
