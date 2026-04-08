@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import hex
 
 # 1. Resolve item names from state or use defaults
@@ -25,6 +27,7 @@ if not hex.get_item(item_destination):
     dest_path = hex.run(
         item_user_input, "get_string", {"prompt": "Enter local backup destination: "}
     )["value"]
+    dest_path = str(Path.home() / dest_path)
     hex.create_item(
         item_destination, "local-files", {"base_path": dest_path}, emoji="📂"
     )
