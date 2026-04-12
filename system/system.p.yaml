@@ -6,4 +6,7 @@ methods:
   update:
     type: bash
     ref: code/update.bash
+  check:
+    type: bash
+    ref: code/check.bash
 emoji: ⚙️

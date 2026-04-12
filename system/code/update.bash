@@ -1,5 +1,4 @@
 #!/bin/bash
 
-systemctl start hexbox-updater
-sleep 5
-journalctl -u hexbox-updater -b -n 50
+echo Update will run in background. Refresh page in 30 seconds.
+sudo systemctl start hexbox-updater

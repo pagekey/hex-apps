@@ -3,4 +3,7 @@ methods:
   update:
     inputs: {}
     outputs: {}
+  check:
+    inputs: {}
+    outputs: {}
 emoji: ⚙️
