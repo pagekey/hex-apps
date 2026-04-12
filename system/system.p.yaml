@@ -1,0 +1,9 @@
+name: default-system
+implements: system
+state: {}
+executor: bash
+methods:
+  update:
+    type: bash
+    ref: code/update.bash
+emoji: ⚙️

@@ -1,0 +1,4 @@
+name: system
+provider_name: default-system
+state: {}
+emoji: ⚙️

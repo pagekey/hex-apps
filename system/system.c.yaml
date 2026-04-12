@@ -1,0 +1,6 @@
+name: scheduler
+methods:
+  update:
+    inputs: {}
+    outputs: {}
+emoji: ⚙️
