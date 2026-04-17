@@ -1,0 +1,13 @@
+name: terminal-bash
+implements: terminal
+state:
+  user_input_item: str
+executor: python
+methods:
+  setup:
+    type: python
+    ref: setup.py
+  run:
+    type: python
+    ref: run.py
+emoji: 💻

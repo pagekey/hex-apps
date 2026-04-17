@@ -1,0 +1,12 @@
+name: terminal
+methods:
+  setup:
+    inputs: {}
+    outputs: {}
+  run:
+    inputs:
+      command: str
+    outputs:
+      output: str
+      exit_code: int
+emoji: 💻

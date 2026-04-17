@@ -1,0 +1,5 @@
+name: terminal
+provider_name: terminal-bash
+state:
+  user_input_item: cli-user-input
+emoji: 💻
